@@ -28,15 +28,20 @@ str_styles <-
     ".st2{fill:#0033CC;}", 
     ".st3{fill:#1D354C;}", 
     ".st4{font-family:'Helvetica-Light';}", 
+    ".st5{font-size:22px;}",
     ".st6{font-family:'Helvetica';}",
     ".st7{font-size:25px;}",
     ".st8{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}",
-    ".st9{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}"
+    ".st9{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}",
+    ".st10{fill:#DDDDDD;}",
     "\n") %>%
   paste0(collapse = "\n")
 
 xml_text(node_style) <- str_styles
 xml_attr(node_style, "type") <- "text/css"
+
+
+
 
 
 # ===== add to svg ====
@@ -64,7 +69,11 @@ xml_attrs(node_circle_end) <- c(id = "main_end_circle", class = "st0",
 node_path_is <- read_xml("<path />") 
 xml_attr(node_path_is, "id") <- "main_intersection" 
 xml_attr(node_path_is, "class") <- "st2" 
-str_path <- "M484,262.8c0,106.4-69.5,196.5-165.5,227.6C222.5,459.3,153,369.2,153,262.8S222.5,66.3,318.5,35.2C414.5,66.3,484,156.4,484,262.8z"
+
+str_path <- 
+  paste0("M484,262.8c0,106.4-69.5,196.5-165.5,227.6C222.5,459.3,153,369.2,",
+         "153,262.8S222.5,66.3,318.5,35.2C414.5,66.3,484,156.4,484,262.8z")
+
 xml_attr(node_path_is, "d") <- str_path
 
 # paste the bits together
@@ -86,7 +95,11 @@ xml_attr(node_group_legend, "id") <- "legend"
 node_path_ldg_is <- read_xml("<path />") 
 xml_attr(node_path_ldg_is, "id") <- "legend_intersection" 
 xml_attr(node_path_ldg_is, "class") <- "st3" 
-str_path <- "M726.9,230c-9.2,2.5-16,11-16,21c0,9.3,5.9,17.3,14.1,20.4c9.2-2.5,16-11,16-21C741.1,241.1,735.2,233.1,726.9,230z"
+
+str_path <- 
+  paste0("M726.9,230c-9.2,2.5-16,11-16,21c0,9.3,5.9,17.3,14.1,20.4c9.2-2.5,", 
+"16-11,16-21C741.1,241.1,735.2,233.1,726.9,230z")
+
 xml_attr(node_path_ldg_is, "d") <- str_path
 
 # make the start circle
@@ -103,7 +116,12 @@ xml_attrs(node_circle_lgd_end) <- c(id = "legend_end_circle", class = "st0",
 node_path_ldg_end_only <- read_xml("<path />") 
 xml_attr(node_path_ldg_end_only, "id") <- "legend_end_only" 
 xml_attr(node_path_ldg_end_only, "class") <- "st0" 
-str_path <- "M741.2,438.2c-2.3,0-4.5,0.3-6.5,0.9c8.9,3.1,15.4,11.6,15.4,21.5c0,10.3-6.9,19-16.3,21.8c2.3,0.8,4.8,1.2,7.4,1.2c12.6,0,22.8-10.2,22.8-22.8S753.7,438.2,741.2,438.2z"
+
+str_path <- 
+  paste0("M741.2,438.2c-2.3,0-4.5,0.3-6.5,0.9c8.9,3.1,15.4,11.6,15.4,21.5c0,", 
+"10.3-6.9,19-16.3,21.8c2.3,0.8,4.8,1.2,7.4,1.2c12.6,0,",
+"22.8-10.2,22.8-22.8S753.7,438.2,741.2,438.2z")
+
 xml_attr(node_path_ldg_end_only, "d") <- str_path
 
 
@@ -111,7 +129,10 @@ xml_attr(node_path_ldg_end_only, "d") <- str_path
 node_path_ldg_s_only <- read_xml("<path />") 
 xml_attr(node_path_ldg_s_only, "id") <- "legend_start_only" 
 xml_attr(node_path_ldg_s_only, "class") <- "st1" 
-str_path <- "M721.5,398.7c0-9.5,5.1-17.5,12.1-20.1c-1.7-0.7-3.6-1.1-5.5-1.1c-9.3,0-16.9,9.4-16.9,21s7.6,21,16.9,21c1.7,0,3.3-0.3,4.8-0.9C726.3,415.7,721.5,407.9,721.5,398.7z"
+str_path <- 
+  paste0("M721.5,398.7c0-9.5,5.1-17.5,12.1-20.1c-1.7-0.7-3.6-1.1-5.5-1.1c-9.3,", 
+"0-16.9,9.4-16.9,21s7.6,21,16.9,21c1.7,0,3.3-0.3,", 
+"4.8-0.9C726.3,415.7,721.5,407.9,721.5,398.7z")
 xml_attr(node_path_ldg_s_only, "d") <- str_path
 
 # staple things together
@@ -130,6 +151,12 @@ xml_add_child(root , node_group_legend)
 # ==========================================================================
 # text pieces ==============================================================
 # ==========================================================================
+
+# first add the highlight rectangle........
+node_rect <- read_xml("<rect />") 
+xml_attrs(node_rect) <- c(class = "st10", 
+x = "801",  y = "373",  width = "392",  height = "40")
+xml_add_child(root, node_rect)
 
 
 fn_create_text <- function(y_pos, str_text)  {
@@ -167,10 +194,40 @@ fn_create_number(255.120, "8,232,398") %>% xml_add_child(root, .)
 fn_create_number(402.499, "3,264,579") %>% xml_add_child(root, .)
 fn_create_number(466.626, "4,105,079") %>% xml_add_child(root, .)
 
+# =============================================================================
+# headings for text
+# 1) cohort
+node_txt_hding_cohort <- read_xml("<text />")
+xml_attr(node_txt_hding_cohort, "transform") <- "matrix(1 0 0 1 821.5898 72.223)"
+xml_attr(node_txt_hding_cohort, "class") <- "st6 st7"
+xml_text(node_txt_hding_cohort) <- "Cohort"
 
+# 2) workers
+node_txt_hding_workers <- read_xml("<text />")
+xml_attr(node_txt_hding_workers, "transform") <- "matrix(1 0 0 1 1086.912 72.223)"
+xml_attr(node_txt_hding_workers, "class") <- "st6 st7"
+xml_text(node_txt_hding_workers) <- "Workers"
 
+# 3) pin these elements to the root
+xml_add_child(root, node_txt_hding_cohort)
+xml_add_child(root, node_txt_hding_workers)
 
-str_path <- "/Users/zurich/Library/Mobile Documents/com~apple~CloudDocs/ato_pre_employment/automate_svg/r_test.svg"
+# =============================================================================
+# top and bottom lines
+node_line_top <- read_xml("<line />")
+xml_attrs(node_line_top) <- c(class = "st8",
+        x1 = "822.5", y1 = "40.2", x2 = "1185.4", y2="40.2")
+
+node_line_bottom <- read_xml("<line />")
+xml_attrs(node_line_bottom) <- c(class = "st9", 
+          x1 = "822.5", y1 = "84.6", x2 = "1185.4", y2="84.6")
+
+# add these to root  
+xml_add_child(root, node_line_top)
+xml_add_child(root, node_line_bottom)
+           
+
+str_path <- "/Users/markthekoala/Library/Mobile Documents/com~apple~CloudDocs/automated_svg/r_test.svg"
 
 xml2::write_xml(root, str_path)
 

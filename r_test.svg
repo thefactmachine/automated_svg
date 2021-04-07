@@ -6,6 +6,8 @@
 .st1{fill:#56B070;}
 .st2{fill:#0033CC;}
 .st3{fill:#1D354C;}
+.st4{font-family:'Helvetica-Light';}
+.st5{font-size:22px;}
 
 </style>
   <g id="main_venn_diagram">
@@ -20,4 +22,9 @@
     <path id="legend_end_only" class="st0" d="M741.2,438.2c-2.3,0-4.5,0.3-6.5,0.9c8.9,3.1,15.4,11.6,15.4,21.5c0,10.3-6.9,19-16.3,21.8c2.3,0.8,4.8,1.2,7.4,1.2c12.6,0,22.8-10.2,22.8-22.8S753.7,438.2,741.2,438.2z"/>
     <path id="legend_start_only" class="st1" d="M721.5,398.7c0-9.5,5.1-17.5,12.1-20.1c-1.7-0.7-3.6-1.1-5.5-1.1c-9.3,0-16.9,9.4-16.9,21s7.6,21,16.9,21c1.7,0,3.3-0.3,4.8-0.9C726.3,415.7,721.5,407.9,721.5,398.7z"/>
   </g>
+  <text transform="matrix(1 0 0 1 821.5898 120.223)" class="st4 st5">Start</text>
+  <text transform="matrix(1 0 0 1 821.5898 189.481)" class="st4 st5">Finish</text>
+  <text transform="matrix(1 0 0 1 821.5898 255.12)" class="st4 st5">Start and finish</text>
+  <text transform="matrix(1 0 0 1 821.5898 402.499)" class="st4 st5">Start only</text>
+  <text transform="matrix(1 0 0 1 821.5898 466.626)" class="st4 st5">Finish only</text>
 </svg>

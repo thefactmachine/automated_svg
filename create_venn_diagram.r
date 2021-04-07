@@ -18,11 +18,18 @@ xml_attr(node_svg, "xml:space") <- "preserve"
 
 # ===== style
 
+
 node_style <- read_xml("<style />")
 
 str_styles <- 
-  c("\n", ".st0{fill:#2E7CB6;}", ".st1{fill:#56B070;}", 
-    ".st2{fill:#0033CC;}", ".st3{fill:#1D354C;}", "\n") %>%
+  c("\n", 
+    ".st0{fill:#2E7CB6;}", 
+    ".st1{fill:#56B070;}", 
+    ".st2{fill:#0033CC;}", 
+    ".st3{fill:#1D354C;}", 
+    ".st4{font-family:'Helvetica-Light';}", 
+    ".st5{font-size:22px;}",
+    "\n") %>%
   paste0(collapse = "\n")
 
 xml_text(node_style) <- str_styles
@@ -116,7 +123,28 @@ root <- xml_new_document()
 xml_add_child(root , node_svg)
 xml_add_child(root , node_group_legend)
 
-root %>% as.character() %>% cat()
+# ==========================================================================
+# text pieces ==============================================================
+# ==========================================================================
+
+
+fn_create_text <- function(y_pos, str_text)  {
+  node_txt <- read_xml("<text />") 
+  str_mat_stem <- "matrix(1 0 0 1 821.5898"
+  str_mat_fin <- paste0(str_mat_stem, " ", y_pos, ")")
+  xml_attr(node_txt, "transform") <- str_mat_fin
+  xml_attr(node_txt, "class") <- "st4 st5"
+  xml_text(node_txt) <- str_text
+  return(node_txt)
+}
+
+# Bolt these onto the root element
+fn_create_text(120.223, "Start") %>% xml_add_child(root, .)
+fn_create_text(189.481, "Finish") %>% xml_add_child(root, .)
+fn_create_text(255.120, "Start and finish") %>% xml_add_child(root, .)
+fn_create_text(402.499, "Start only") %>% xml_add_child(root, .)
+fn_create_text(466.626, "Finish only") %>% xml_add_child(root, .)
+
 
 str_path <- "/Users/zurich/Library/Mobile Documents/com~apple~CloudDocs/ato_pre_employment/automate_svg/r_test.svg"
 

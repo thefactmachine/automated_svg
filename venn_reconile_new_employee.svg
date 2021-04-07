@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1273 506" style="enable-background:new 0 0 1273 506;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCCCCC;}
+	.st1{fill:#8498AF;}
+	.st2{display:none;}
+	.st3{display:inline;fill:#FF1212;}
+	.st4{fill:#D5DCE6;}
+	.st5{font-family:'HelveticaNeue';}
+	.st6{font-size:18px;}
+	.st7{fill:#0000FF;}
+	.st8{font-family:'HelveticaNeue-MediumItalic';}
+	.st9{font-size:22px;}
+	.st10{opacity:0.34;}
+	.st11{font-family:'Helvetica';}
+	.st12{font-size:21px;}
+	.st13{fill:none;}
+	.st14{display:inline;}
+	.st15{fill:#009245;}
+</style>
+<g id="intersect">
+	<rect x="627" y="65" class="st0" width="598" height="58.5"/>
+</g>
+<g id="start_x5F_only">
+	<path class="st1" d="M685,369.3c0-9.5,6.3-17.5,15-20.1c-2.1-0.7-4.4-1.1-6.8-1.1c-11.6,0-21,9.4-21,21s9.4,21,21,21
+		c2.1,0,4.1-0.3,6-0.9C690.9,386.3,685,378.5,685,369.3z"/>
+</g>
+<g id="end_x5F_only">
+	<g class="st2">
+		<path class="st3" d="M392,22c-23.6,0-46.3,3.5-67.8,9.9C417.2,63.9,484,152.1,484,256c0,107.3-71.3,198-169.2,227.1
+			C339,491.5,365,496,392,496c130.9,0,237-106.1,237-237S522.9,22,392,22z"/>
+	</g>
+	<path class="st4" d="M705.2,416.2c-2.3,0-4.5,0.3-6.5,0.9c8.9,3.1,15.4,11.6,15.4,21.5c0,10.3-6.9,19-16.3,21.8
+		c2.3,0.8,4.8,1.2,7.4,1.2c12.6,0,22.8-10.2,22.8-22.8S717.8,416.2,705.2,416.2z"/>
+</g>
+<g id="Layer_1_copy_3">
+	<text transform="matrix(1 0 0 1 803.5 101.625)"><tspan x="0" y="0" class="st5 st6">Start </tspan><tspan x="43.7" y="0" class="st7 st5 st6">[S]</tspan></text>
+	<text transform="matrix(1 0 0 1 803.5 170.8252)"><tspan x="0" y="0" class="st5 st6">Finish </tspan><tspan x="52.3" y="0" class="st7 st5 st6">[F]</tspan></text>
+	<text transform="matrix(1 0 0 1 803.5 240.0254)"><tspan x="0" y="0" class="st5 st6">Start and Finish </tspan><tspan x="131.4" y="0" class="st7 st5 st6">[S ^ F ]</tspan></text>
+	<text transform="matrix(1 0 0 1 803.5 378.4248)"><tspan x="0" y="0" class="st5 st6">Start only </tspan><tspan x="82" y="0" class="st7 st5 st6">[S - (S ^ F) ]</tspan></text>
+	<text transform="matrix(1 0 0 1 803.5 447.625)"><tspan x="0" y="0" class="st5 st6">End only </tspan><tspan x="75" y="0" class="st7 st5 st6">[F - (S ^ F) ]</tspan></text>
+	<text transform="matrix(1 0 0 1 803.5 53.825)" class="st8 st9">Cohort</text>
+	<text transform="matrix(1 0 0 1 1091.5 53.825)" class="st8 st9">Workers</text>
+</g>
+<g id="Layer_8">
+	<path class="st10" d="M695.6,210.5c-7.6,2.3-13.2,9.4-13.2,17.7c0,8.1,5.2,15,12.5,17.5c7.6-2.3,13.2-9.4,13.2-17.7
+		C708,219.8,702.8,213,695.6,210.5z"/>
+	<text transform="matrix(1 0 0 1 1069.667 99.8491)" class="st11 st12">10,309,187</text>
+	<text transform="matrix(1 0 0 1 1071.2145 162.5868)" class="st11 st12">11,016,788</text>
+	<text transform="matrix(1 0 0 1 1082.8947 240.2375)" class="st11 st12">9,112,758</text>
+	<text transform="matrix(1 0 0 1 1081.3453 378.2373)" class="st11 st12">1,196,429</text>
+	<text transform="matrix(1 0 0 1 1081.3458 445.2372)" class="st11 st12">1,904,030</text>
+</g>
+<g id="new_x5F_segments">
+	<circle class="st1" cx="237.5" cy="255.5" r="237.5"/>
+	<circle class="st4" cx="392.5" cy="258.5" r="237.5"/>
+	<path class="st10" d="M319.4,32.5C224,63.3,155,152.9,155,258.5c0,102.4,64.8,189.7,155.6,223C406,450.7,475,361.1,475,255.5
+		C475,153.1,410.2,65.8,319.4,32.5z"/>
+	<path class="st13" d="M319.4,32.5C224,63.3,155,152.9,155,258.5c0,102.4,64.8,189.7,155.6,223C406,450.7,475,361.1,475,255.5
+		C475,153.1,410.2,65.8,319.4,32.5z"/>
+</g>
+<g id="symbols">
+	<circle class="st4" cx="710" cy="162" r="20"/>
+	<circle class="st1" cx="683" cy="92" r="20"/>
+</g>
+<g id="text" class="st2">
+	<g class="st14">
+		<path class="st15" d="M687,71c11.6,0,21,9.4,21,21s-9.4,21-21,21s-21-9.4-21-21S675.4,71,687,71 M687,66c-14.4,0-26,11.6-26,26
+			s11.6,26,26,26s26-11.6,26-26S701.4,66,687,66L687,66z"/>
+	</g>
+</g>
+<g id="outline">
+	<g>
+		<path class="st13" d="M392,22c-23.6,0-46.3,3.5-67.8,9.9C300,23.5,274,19,247,19C116.1,19,10,125.1,10,256s106.1,237,237,237
+			c23.6,0,46.3-3.5,67.8-9.9C339,491.5,365,496,392,496c130.9,0,237-106.1,237-237S522.9,22,392,22z"/>
+	</g>
+	<g>
+		<path class="st13" d="M701.1,271.8c-2.5,0-4.9,0.4-7.1,1c-2.5-0.9-5.3-1.4-8.1-1.4c-13.7,0-24.9,11.1-24.9,24.9
+			s11.1,24.9,24.9,24.9c2.5,0,4.9-0.4,7.1-1c2.5,0.9,5.3,1.4,8.1,1.4c13.7,0,24.9-11.1,24.9-24.9S714.9,271.8,701.1,271.8z"/>
+	</g>
+</g>
+</svg>

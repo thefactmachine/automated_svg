@@ -7,6 +7,8 @@
 	.st1{fill:#56B070;}
 	.st2{fill:#0033CC;}
 	.st3{fill:#1D354C;}
+	.st4{font-family:'Helvetica-Light';}
+	.st5{font-size:22px;}
 </style>
 <g id="main_x5F_venn_1_">
 	<circle id="main_x5F_end_1_" class="st0" cx="392.2" cy="262.8" r="239.2"/>
@@ -24,4 +26,9 @@
 	<path id="start_x5F_only" class="st1" d="M721.5,398.7c0-9.5,5.1-17.5,12.1-20.1c-1.7-0.7-3.6-1.1-5.5-1.1c-9.3,0-16.9,9.4-16.9,21
 		s7.6,21,16.9,21c1.7,0,3.3-0.3,4.8-0.9C726.3,415.7,721.5,407.9,721.5,398.7z"/>
 </g>
+<text transform="matrix(1 0 0 1 821.5898 120.2236)" class="st4 st5">Start</text>
+<text transform="matrix(1 0 0 1 821.59 189.481)" class="st4 st5">Finish</text>
+<text transform="matrix(1 0 0 1 821.5897 255.1203)" class="st4 st5">Start and finish</text>
+<text transform="matrix(1 0 0 1 821.5899 402.4999)" class="st4 st5">Start only</text>
+<text transform="matrix(1 0 0 1 821.5901 466.6263)" class="st4 st5">Finish only</text>
 </svg>

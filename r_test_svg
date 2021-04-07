@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1341 520" style="enable-background:new 0 0 1341 520;" xml:space="preserve">
+  <style type="text/css">
+
+.st0{fill:#2E7CB6;}
+.st1{fill:#56B070;}
+.st2{fill:#0033CC;}
+.st3{fill:#1D354C;}
+
+</style>
+  <group id="main_venn_diagram">
+    <circle cx="244.8" cy="262.8" r="239.2"/>
+    <circle cx="392.2" cy="262.8" r="239.2"/>
+    <path id="main_intersection" class="st2" d="M484,262.8c0,106.4-69.5,196.5-165.5,227.6C222.5,459.3,153,369.2,153,262.8S222.5,66.3,318.5,35.2C414.5,66.3,484,156.4,484,262.8z"/>
+  </group>
+</svg>

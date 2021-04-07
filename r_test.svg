@@ -27,4 +27,9 @@
   <text transform="matrix(1 0 0 1 821.5898 255.12)" class="st4 st5">Start and finish</text>
   <text transform="matrix(1 0 0 1 821.5898 402.499)" class="st4 st5">Start only</text>
   <text transform="matrix(1 0 0 1 821.5898 466.626)" class="st4 st5">Finish only</text>
+  <text text-anchor="end" transform="matrix(1 0 0 1 1180 120.223)" class="st4 st5">11,496,977</text>
+  <text text-anchor="end" transform="matrix(1 0 0 1 1180 189.481)" class="st4 st5">12,337,477</text>
+  <text text-anchor="end" transform="matrix(1 0 0 1 1180 255.12)" class="st4 st5">8,232,398</text>
+  <text text-anchor="end" transform="matrix(1 0 0 1 1180 402.499)" class="st4 st5">3,264,579</text>
+  <text text-anchor="end" transform="matrix(1 0 0 1 1180 466.626)" class="st4 st5">4,105,079</text>
 </svg>

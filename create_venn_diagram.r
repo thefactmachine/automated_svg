@@ -28,12 +28,16 @@ str_styles <-
     ".st2{fill:#0033CC;}", 
     ".st3{fill:#1D354C;}", 
     ".st4{font-family:'Helvetica-Light';}", 
-    ".st5{font-size:22px;}",
+    ".st6{font-family:'Helvetica';}",
+    ".st7{font-size:25px;}",
+    ".st8{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}",
+    ".st9{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}"
     "\n") %>%
   paste0(collapse = "\n")
 
 xml_text(node_style) <- str_styles
 xml_attr(node_style, "type") <- "text/css"
+
 
 # ===== add to svg ====
 
@@ -144,6 +148,26 @@ fn_create_text(189.481, "Finish") %>% xml_add_child(root, .)
 fn_create_text(255.120, "Start and finish") %>% xml_add_child(root, .)
 fn_create_text(402.499, "Start only") %>% xml_add_child(root, .)
 fn_create_text(466.626, "Finish only") %>% xml_add_child(root, .)
+
+fn_create_number <- function(y_pos, str_text)  {
+  node_txt <- read_xml("<text />") 
+  str_mat_stem <- "matrix(1 0 0 1 1180"
+  str_mat_fin <- paste0(str_mat_stem, " ", y_pos, ")")
+  xml_attr(node_txt, "text-anchor") <- "end"
+  xml_attr(node_txt, "transform") <- str_mat_fin
+  xml_attr(node_txt, "class") <- "st4 st5"
+  xml_text(node_txt) <- str_text
+  return(node_txt)
+}
+
+
+fn_create_number(120.223, "11,496,977") %>% xml_add_child(root, .)
+fn_create_number(189.481, "12,337,477") %>% xml_add_child(root, .)
+fn_create_number(255.120, "8,232,398") %>% xml_add_child(root, .)
+fn_create_number(402.499, "3,264,579") %>% xml_add_child(root, .)
+fn_create_number(466.626, "4,105,079") %>% xml_add_child(root, .)
+
+
 
 
 str_path <- "/Users/zurich/Library/Mobile Documents/com~apple~CloudDocs/ato_pre_employment/automate_svg/r_test.svg"

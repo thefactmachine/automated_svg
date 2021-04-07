@@ -24,9 +24,11 @@ xml_attr(x, "href")
 cat(as.character(x))
 
 # add many attributes
+x <- read_xml("<svg />")
 xml_attrs(x) <- c(id = "xml2", href = "https://github.com/r-lib/xml2")
 xml_attrs(x)
 cat(as.character(x))
+
 
 # how to add a name space
 xml_attr(x, "xmlns:bar") <- "http://bar"

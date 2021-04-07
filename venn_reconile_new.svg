@@ -9,6 +9,8 @@
 	.st3{fill:#1D354C;}
 	.st4{font-family:'Helvetica-Light';}
 	.st5{font-size:22px;}
+	.st6{fill:none;}
+	.st7{font-size:17px;}
 </style>
 <g id="main_x5F_venn_1_">
 	<circle id="main_x5F_end_1_" class="st0" cx="392.2" cy="262.8" r="239.2"/>
@@ -31,4 +33,11 @@
 <text transform="matrix(1 0 0 1 821.5897 255.1203)" class="st4 st5">Start and finish</text>
 <text transform="matrix(1 0 0 1 821.5899 402.4999)" class="st4 st5">Start only</text>
 <text transform="matrix(1 0 0 1 821.5901 466.6263)" class="st4 st5">Finish only</text>
+<text transform="matrix(1 0 0 1 1070.9159 120.7288)" class="st4 st5">11,496,977</text>
+<text transform="matrix(1 0 0 1 1070.916 189.9862)" class="st4 st5">12,337,477</text>
+<text transform="matrix(1 0 0 1 1083.1482 255.6255)" class="st4 st5">8,232,398</text>
+<text transform="matrix(1 0 0 1 1083.1483 403.0051)" class="st4 st5">3,264,579</text>
+<text transform="matrix(1 0 0 1 1083.1484 467.1315)" class="st4 st5">4,105,079</text>
+<rect x="783.7" y="24.8" class="st6" width="286.4" height="71.3"/>
+<text transform="matrix(1 0 0 1 796.1094 37.061)"><tspan x="0" y="0" class="st4 st7">This is an example of a text box and </tspan><tspan x="18" y="20.4" class="st4 st7">we type in text and see what hap</tspan><tspan x="268.3" y="20.4" class="st4 st7">-</tspan><tspan x="236.2" y="40.8" class="st4 st7">pens</tspan></text>
 </svg>

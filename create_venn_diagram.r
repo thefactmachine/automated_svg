@@ -204,9 +204,9 @@ xml_text(node_txt_hding_cohort) <- "Cohort"
 
 # 2) workers
 node_txt_hding_workers <- read_xml("<text />")
-xml_attr(node_txt_hding_workers, "transform") <- "matrix(1 0 0 1 1086.912 72.223)"
+xml_attr(node_txt_hding_workers, "transform") <- "matrix(1 0 0 1 1126.912 72.223)"
 xml_attr(node_txt_hding_workers, "class") <- "st6 st7"
-xml_text(node_txt_hding_workers) <- "Workers"
+xml_text(node_txt_hding_workers) <- "Jobs"
 
 # 3) pin these elements to the root
 xml_add_child(root, node_txt_hding_cohort)

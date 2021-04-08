@@ -89,7 +89,7 @@ xml_add_child(node_svg , node_group_venn)
 
 node_group_legend <- read_xml("<g />")
 xml_attr(node_group_legend, "id") <- "legend" 
-
+xml_attr(node_group_legend, "transform") <- "translate(100, 0)" 
 
 # make the intersection
 node_path_ldg_is <- read_xml("<path />") 
@@ -145,7 +145,6 @@ xml_add_child(node_group_legend , node_path_ldg_s_only)
 
 root <- xml_new_document() 
 
-# root <- read_xml("<div />") 
 
 
 
@@ -158,8 +157,8 @@ xml_add_child(root , node_group_legend)
 
 
 node_group_text_container <- read_xml("<g />")
-xml_attr(node_group_legend, "id") <- "text_container" 
-
+xml_attr(node_group_text_container, "id") <- "text_container" 
+xml_attr(node_group_text_container, "transform") <- "translate(120, 0)" 
 
 
 
@@ -167,7 +166,7 @@ xml_attr(node_group_legend, "id") <- "text_container"
 node_rect <- read_xml("<rect />") 
 xml_attrs(node_rect) <- c(class = "st10", 
 x = "801",  y = "373",  width = "392",  height = "40")
-xml_add_child(root, node_rect)
+xml_add_child(node_group_text_container, node_rect)
 
 
 fn_create_text <- function(y_pos, str_text)  {
@@ -180,12 +179,12 @@ fn_create_text <- function(y_pos, str_text)  {
   return(node_txt)
 }
 
-# Bolt these onto the root element
-fn_create_text(120.223, "Start") %>% xml_add_child(root, .)
-fn_create_text(189.481, "Finish") %>% xml_add_child(root, .)
-fn_create_text(255.120, "Start and finish") %>% xml_add_child(root, .)
-fn_create_text(402.499, "Start only") %>% xml_add_child(root, .)
-fn_create_text(466.626, "Finish only") %>% xml_add_child(root, .)
+# Bolt these onto the group element
+fn_create_text(120.223, "Start") %>% xml_add_child(node_group_text_container, .)
+fn_create_text(189.481, "Finish") %>% xml_add_child(node_group_text_container, .)
+fn_create_text(255.120, "Start and finish") %>% xml_add_child(node_group_text_container, .)
+fn_create_text(402.499, "Start only") %>% xml_add_child(node_group_text_container, .)
+fn_create_text(466.626, "Finish only") %>% xml_add_child(node_group_text_container, .)
 
 fn_create_number <- function(y_pos, str_text)  {
   node_txt <- read_xml("<text />") 
@@ -199,11 +198,11 @@ fn_create_number <- function(y_pos, str_text)  {
 }
 
 
-fn_create_number(120.223, "11,496,977") %>% xml_add_child(root, .)
-fn_create_number(189.481, "12,337,477") %>% xml_add_child(root, .)
-fn_create_number(255.120, "8,232,398") %>% xml_add_child(root, .)
-fn_create_number(402.499, "3,264,579") %>% xml_add_child(root, .)
-fn_create_number(466.626, "4,105,079") %>% xml_add_child(root, .)
+fn_create_number(120.223, "11,496,977") %>% xml_add_child(node_group_text_container, .)
+fn_create_number(189.481, "12,337,477") %>% xml_add_child(node_group_text_container, .)
+fn_create_number(255.120, "8,232,398") %>% xml_add_child(node_group_text_container, .)
+fn_create_number(402.499, "3,264,579") %>% xml_add_child(node_group_text_container, .)
+fn_create_number(466.626, "4,105,079") %>% xml_add_child(node_group_text_container, .)
 
 # =============================================================================
 # headings for text
@@ -220,8 +219,8 @@ xml_attr(node_txt_hding_workers, "class") <- "st6 st7"
 xml_text(node_txt_hding_workers) <- "Jobs"
 
 # 3) pin these elements to the root
-xml_add_child(root, node_txt_hding_cohort)
-xml_add_child(root, node_txt_hding_workers)
+xml_add_child(node_group_text_container, node_txt_hding_cohort)
+xml_add_child(node_group_text_container, node_txt_hding_workers)
 
 # =============================================================================
 # top and bottom lines
@@ -233,12 +232,13 @@ node_line_bottom <- read_xml("<line />")
 xml_attrs(node_line_bottom) <- c(class = "st9", 
           x1 = "822.5", y1 = "84.6", x2 = "1185.4", y2="84.6")
 
-# add these to root  
-xml_add_child(root, node_line_top)
-xml_add_child(root, node_line_bottom)
+# add these to group
+xml_add_child(node_group_text_container, node_line_top)
+xml_add_child(node_group_text_container, node_line_bottom)
 
 
-
+# add the group to the root
+xml_add_child(root, node_group_text_container)
 
 
 

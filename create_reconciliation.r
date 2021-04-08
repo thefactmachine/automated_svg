@@ -32,17 +32,19 @@ str_styles <-
     ".st6{font-family:'Helvetica';}",
     ".st7{font-size:25px;}",
     ".st8{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}",
-    ".st9{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}",
-    ".st10{fill:#DDDDDD;}",
+    ".sa9{fill:#FF0000;}",
+    ".sa10{fill:#337DB4;}",
+    ".sa12{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}",
+    ".sa13{font-size:39px;}",
+    ".sa20{fill:#000000;}",
     "\n") %>%
   paste0(collapse = "\n")
 
 xml_text(node_style) <- str_styles
 xml_attr(node_style, "type") <- "text/css"
 
+
 # ==========================================================================
-
-
 # background rectangle
 node_grp_bg <- read_xml("<g />")
 xml_attr(node_grp_bg, "id") <- "background_rectangle"
@@ -101,5 +103,163 @@ xml_add_child(node_grp_warning , node_path_warning_c)
 xml_add_child(node_grp_warning , node_path_warning_d)
 
 # ==========================================================================
+# rectangles
+node_grp_data_rect <- read_xml("<g />")
+xml_attr(node_grp_data_rect, "id") <- "data_rectangles"
+
+# ====
+node_rect_s1 <- read_xml("<rect />")
+
+xml_attrs(node_rect_s1) <- 
+c(x="413.1", y="23.2", class = "sa20", width = "796.1", height = "120")
+
+# ========================
+# step 2
+node_rect_s2_blue <- read_xml("<rect />")
+
+xml_attrs(node_rect_s2_blue) <- 
+  c(x = "413.1", y = "230.2", class = "sa10", width = "468.7", height = "120")
+# ====
+node_rect_s2_red <- read_xml("<rect />")
+
+xml_attrs(node_rect_s2_red) <- 
+  c(x = "881.3", y = "230.2", class = "sa9", width = "326.4", height = "120")
+# ========================
+# step 3
+node_rect_s3_blue <- read_xml("<rect />")
+xml_attrs(node_rect_s3_blue) <- 
+  c(x = "413.1", y = "437.2", class = "sa10", width = "357.2", height = "120")
+# ====
+node_rect_s3_red <- read_xml("<rect />")
+xml_attrs(node_rect_s3_red) <- 
+  c( x="770.3", y="437.2", class="sa9", width="111.5", height="120")
+
+# ========================
+# step 4
+node_rect_s4_blue <- read_xml("<rect />")
+xml_attrs(node_rect_s4_blue) <- 
+  c(x = "413.1",  y = "645.2",  class = "sa10",  width = "237.8", height = "120")
+
+# ====
+node_rect_s4_red <- read_xml("<rect />")
+xml_attrs(node_rect_s4_red) <- 
+  c(x = "649.9",  y = "645.2",  class = "sa9",  width = "120.4",  height = "120")
+# ========================
+# pin the rectangles to the group
+xml_add_child(node_grp_data_rect , node_rect_s1)
+xml_add_child(node_grp_data_rect , node_rect_s2_blue)
+xml_add_child(node_grp_data_rect , node_rect_s2_red)
+xml_add_child(node_grp_data_rect , node_rect_s3_blue)
+xml_add_child(node_grp_data_rect , node_rect_s3_red)
+xml_add_child(node_grp_data_rect , node_rect_s4_blue)
+xml_add_child(node_grp_data_rect , node_rect_s4_red)
+
+# ==========================================================================
+# arrows step 1
+node_grp_step1_arrows <- read_xml("<g />")
+xml_attr(node_grp_step1_arrows, "id") <- "step_1_arrows"
+
+node_arrow_1_left_pg <- read_xml("<polygon />")
+xml_attrs(node_arrow_1_left_pg) <- 
+  c(class="sa0", points= "459.7, 70.7 439.9, 82.2 459.7, 93.7")
+
+node_arrow_1_left_line <- read_xml("<line />")
+xml_attrs(node_arrow_1_left_line) <- 
+  c(class="sa12", x1 = "612.1", y1 = "82.2", x2 = "456.5", y2 = "82.2")
+
+node_arrow_1_right_pg <- read_xml("<polygon />")
+xml_attrs(node_arrow_1_right_pg) <- 
+  c(class="sa0", points = "1168.4, 93.7 1188.3, 82.2 1168.4, 70.7")
+
+node_arrow_1_right_line <- read_xml("<line />")
+xml_attrs(node_arrow_1_right_line) <- 
+  c(class = "sa12", x1 = "1016.1", y1 = "82.2", x2="1171.8", y2 = "82.2")
+
+xml_add_child(node_grp_step1_arrows , node_arrow_1_left_pg)
+xml_add_child(node_grp_step1_arrows , node_arrow_1_left_line)
+xml_add_child(node_grp_step1_arrows , node_arrow_1_right_pg)
+xml_add_child(node_grp_step1_arrows , node_arrow_1_right_line)
+
+# ==========================================================================
+# rectangle text
+
+node_grp_rect_text<- read_xml("<g />")
+xml_attr(node_grp_rect_text, "id") <- "rectangle_text"
+
+# ====
+node_text_step1 <- read_xml("<text />")
+xml_attrs(node_text_step1) <- 
+  c(transform = "matrix(1 0 0 1 648.4478 92.5786)", class = "sa0 sa7 sa13")
+xml_text(node_text_step1) <-  "2.96 million people"
+
+# ====
+node_text_step2_blue <- read_xml("<text />")
+xml_attrs(node_text_step2_blue) <- 
+  c(transform = "matrix(1 0 0 1 588.5901 296.9075)", class = "sa0 sa7 sa13")
+xml_text(node_text_step2_blue) <-  "1.77 M"
+
+# ====
+node_text_step2_red <- read_xml("<text />")
+xml_attrs(node_text_step2_red) <- 
+  c(transform = "matrix(1 0 0 1 985.5903 296.9078)", class = "sa0 sa7 sa13")
+xml_text(node_text_step2_red) <-  "1.20 M"
+
+# ====
+node_text_step3_blue <- read_xml("<text />")
+xml_attrs(node_text_step3_blue) <- 
+  c(transform = "matrix(1 0 0 1 532.5903 505.9073)" , class = "sa0 sa7 sa13")
+xml_text(node_text_step3_blue) <-  "1.34 M"
+
+# ====
+node_text_step3_red <- read_xml("<text />")
+xml_attrs(node_text_step3_red) <- 
+  c(transform = "matrix(1 0 0 1 791.6534 505.9075)" , class = "sa0 sa7 sa13")
+xml_text(node_text_step3_red) <-  "0.42"
+
+# ====
+node_text_step4_blue <- read_xml("<text />")
+xml_attrs(node_text_step4_blue) <- 
+  c(transform = "matrix(1 0 0 1 474.5903 712.2468)" , class = "sa0 sa7 sa13")
+xml_text(node_text_step4_blue) <-  "0.89 M"
+
+# ====
+node_text_step4_red <- read_xml("<text />")
+xml_attrs(node_text_step4_red) <- 
+  c(transform = "matrix(1 0 0 1 676.2523 712.2469)", class = "sa0 sa7 sa13")
+xml_text(node_text_step4_red) <-  "0.45"
+
+# ========================
+# pin to group
+xml_add_child(node_grp_rect_text , node_text_step1)
+
+xml_add_child(node_grp_rect_text , node_text_step2_blue)
+xml_add_child(node_grp_rect_text , node_text_step2_red)
+
+xml_add_child(node_grp_rect_text , node_text_step3_blue)
+xml_add_child(node_grp_rect_text , node_text_step3_red)
+
+xml_add_child(node_grp_rect_text , node_text_step4_blue)
+xml_add_child(node_grp_rect_text , node_text_step4_red)
+
+# ==========================================================================
+# put humpty dumpty back together....append groups to svg element
+# need to work from the branches back to the root
+
+xml_add_child(node_svg , node_style)
+xml_add_child(node_svg , node_grp_bg)
+xml_add_child(node_svg , node_grp_warning)
+xml_add_child(node_svg , node_grp_data_rect)
+xml_add_child(node_svg , node_grp_step1_arrows)
+xml_add_child(node_svg , node_grp_rect_text)
+
+root <- xml_new_document() 
+xml_add_child(root , node_svg)
+
+str_path <- "/Users/markthekoala/Library/Mobile Documents/com~apple~CloudDocs/automated_svg/reconciliation.svg"
+xml2::write_xml(root, str_path, options = c("no_declaration", "format") )
+
+
+
+
 
 

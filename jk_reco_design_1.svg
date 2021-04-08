@@ -14,10 +14,12 @@
 	.st8{font-size:36px;}
 	.st9{fill:#FF0000;}
 	.st10{fill:#337DB4;}
-	.st11{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st11{fill:#020202;}
+	.st12{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st13{font-size:39px;}
 </style>
 <g id="background_x5F_rectangle">
-	<rect y="-4.5" class="st0" width="1223.1" height="910"/>
+	<rect x="0.5" y="-2.1" class="st0" width="1223.1" height="910"/>
 </g>
 <g id="warning_x5F_symbol">
 	<path class="st1" d="M27,853.8L27,853.8c-6.8,11.5,1.7,25.9,15.3,25.9l0,0c13.5,0,22-14.4,15.3-25.9l0,0
@@ -46,16 +48,25 @@
 	<rect id="step_x5F_3_x5F_blue" x="413.1" y="437.2" class="st10" width="357.2" height="120"/>
 	<rect id="step_x5F_2_x5F_red" x="881.3" y="230.2" class="st9" width="326.4" height="120"/>
 	<rect id="step_x5F_2_x5F_blue" x="413.1" y="230.2" class="st10" width="468.7" height="120"/>
-	<rect id="step_x5F_1" x="413.1" y="23.2" width="796.1" height="120"/>
+	<rect id="step_x5F_1" x="413.1" y="23.2" class="st11" width="796.1" height="120"/>
 </g>
 <g id="white_x5F_top_x5F_arrows">
 </g>
 <g id="arrow_x5F_top_x5F_left">
 	<polygon class="st0" points="459.7,70.7 439.9,82.2 459.7,93.7 	"/>
-	<line class="st11" x1="612.1" y1="82.2" x2="456.5" y2="82.2"/>
+	<line class="st12" x1="612.1" y1="82.2" x2="456.5" y2="82.2"/>
 </g>
 <g id="arrow_x5F_top_x5F_right">
 	<polygon class="st0" points="1168.4,93.7 1188.3,82.2 1168.4,70.7 	"/>
-	<line class="st11" x1="1016.1" y1="82.2" x2="1171.8" y2="82.2"/>
+	<line class="st12" x1="1016.1" y1="82.2" x2="1171.8" y2="82.2"/>
+</g>
+<g id="rectangle_x5F_text">
+	<text transform="matrix(1 0 0 1 676.2523 712.2469)" class="st0 st7 st13">0.45</text>
+	<text transform="matrix(1 0 0 1 474.5903 712.2468)" class="st0 st7 st13">0.89 M</text>
+	<text transform="matrix(1 0 0 1 791.6534 505.9075)" class="st0 st7 st13">0.42</text>
+	<text transform="matrix(1 0 0 1 532.5903 505.9073)" class="st0 st7 st13">1.34 M</text>
+	<text transform="matrix(1 0 0 1 985.5903 296.9078)" class="st0 st7 st13">1.20 M</text>
+	<text transform="matrix(1 0 0 1 588.5901 296.9075)" class="st0 st7 st13">1.77 M</text>
+	<text transform="matrix(1 0 0 1 648.4478 92.5786)" class="st0 st7 st13">2.96 million people</text>
 </g>
 </svg>

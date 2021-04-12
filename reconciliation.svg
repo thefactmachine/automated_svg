@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1223.1 905.8" style="enable-background:new 0 0 1223.1 905.8;" xml:space="preserve">
+  <style type="text/css">
+
+.sa0{fill:#FFFFFF;}
+.sa1{fill:none;stroke:#000000;stroke-width:0.3732;stroke-miterlimit:10;}
+.sa2{fill:#FFF933;stroke:#000000;stroke-width:0.571;stroke-miterlimit:10;}
+.sa3{stroke:#000000;stroke-width:0.571;stroke-miterlimit:10;}
+.st4{font-family:'Helvetica-Light';}
+.st5{font-size:22px;}
+.st6{font-family:'Helvetica';}
+.st7{font-size:25px;}
+.st8{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+.sa9{fill:#FF0000;}
+.sa10{fill:#337DB4;}
+.sa12{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+.sa13{font-size:39px;}
+.sa14{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+.sa18{font-size:21px;}
+.sa19{fill:#CC0000;}
+.sa20{fill:#000000;}
+.sa30{fill:#999999;}
+.sa31{font-size:16px;}
+.sa32{font-size:39px;}
+.sa33{fill:none;}
+.sa34{font-size:20px;}
+.sa35{fill:#666666;}
+
+</style>
+  <g id="background_rectangle">
+    <rect class="sa0" x="0" y="0" width="1223.1" height="905.8"/>
+  </g>
+  <g id="warning_symbol">
+    <path class="sa1" d="M27,853.8L27,853.8c-6.8,11.5,1.7,25.9,15.3,25.9l0,0c13.5,0,22-14.4,15.3-25.9l0,0C50.6,842.3,33.7,842.3,27,853.8z"/>
+    <path class="sa2" d="M36.5,830.2l-25.6,43.5c-2.5,4.3,0.6,9.7,5.7,9.7h51.1c5.1,0,8.2-5.4,5.7-9.7l-25.6-43.5C45.3,825.9,39,825.9,36.5,830.2z"/>
+    <path class="sa3" d="M42.4,875.9h-0.8c-1.6,0-3-1.3-3-2.9l0,0c0-1.6,1.3-2.9,3-2.9h0.8c1.6,0,3,1.3,3,2.9l0,0C45.3,874.5,44,875.9,42.4,875.9z"/>
+    <path class="sa3" d="M42,867.9L42,867.9c-1.9,0-3.5-1.5-3.5-3.4V844c0-1.9,1.5-3.4,3.5-3.4l0,0c1.9,0,3.5,1.5,3.5,3.4v20.5C45.3,866.4,43.8,867.9,42,867.9z"/>
+  </g>
+  <g id="data_rectangles">
+    <rect x="413.1" y="23.2" class="sa20" width="796.1" height="120"/>
+    <rect x="413.1" y="230.2" class="sa10" width="468.7" height="120"/>
+    <rect x="881.3" y="230.2" class="sa9" width="326.4" height="120"/>
+    <rect x="413.1" y="437.2" class="sa10" width="357.2" height="120"/>
+    <rect x="770.3" y="437.2" class="sa9" width="111.5" height="120"/>
+    <rect x="413.1" y="645.2" class="sa10" width="237.8" height="120"/>
+    <rect x="649.9" y="645.2" class="sa9" width="120.4" height="120"/>
+  </g>
+  <g id="step_1_arrows">
+    <polygon class="sa0" points="459.7, 70.7 439.9, 82.2 459.7, 93.7"/>
+    <line class="sa12" x1="612.1" y1="82.2" x2="456.5" y2="82.2"/>
+    <polygon class="sa0" points="1168.4, 93.7 1188.3, 82.2 1168.4, 70.7"/>
+    <line class="sa12" x1="1016.1" y1="82.2" x2="1171.8" y2="82.2"/>
+  </g>
+  <g id="rectangle_text">
+    <text transform="matrix(1 0 0 1 648.4478 92.5786)" class="sa0 sa7 sa13">2.96 million people</text>
+    <text transform="matrix(1 0 0 1 588.5901 296.9075)" class="sa0 sa7 sa13">1.77 M</text>
+    <text transform="matrix(1 0 0 1 985.5903 296.9078)" class="sa0 sa7 sa13">1.20 M</text>
+    <text transform="matrix(1 0 0 1 532.5903 505.9073)" class="sa0 sa7 sa13">1.34 M</text>
+    <text transform="matrix(1 0 0 1 791.6534 505.9075)" class="sa0 sa7 sa13">0.42</text>
+    <text transform="matrix(1 0 0 1 474.5903 712.2468)" class="sa0 sa7 sa13">0.89 M</text>
+    <text transform="matrix(1 0 0 1 676.2523 712.2469)" class="sa0 sa7 sa13">0.45</text>
+  </g>
+  <g id="down_arrows">
+    <line class="sa14" x1="770.2" y1="565.6" x2="770.2" y2="632.4"/>
+    <polygon class="sa20" points="765.2, 629.9 770.2, 638.6 775.2, 629.9"/>
+    <line class="sa14" x1="881.5" y1="357.8" x2="881.5" y2="424.6"/>
+    <polygon class="sa20" points="876.5, 422.1, 881.5, 430.8 886.5, 422.1"/>
+  </g>
+  <g id="rectangle_comments">
+    <text transform="matrix(1 0 0 1 411.8057 379.6733)" class="sa5 sa18">STP record in December</text>
+    <text transform="matrix(1 0 0 1 894.6696 379.6734)" class="sa5 sa18 sa19">No STP record in December</text>
+    <text transform="matrix(1 0 0 1 776.8792 590.0461)" class="sa5 sa18">Multiple jobs</text>
+    <text transform="matrix(1 0 0 1 413.3852 590.0463)" class="sa5 sa18">One job in both periods</text>
+    <text transform="matrix(1 0 0 1 413.0571 797.5519)" class="sa5 sa18">Industry changers</text>
+    <text transform="matrix(1 0 0 1 652.5934 797.5519)" class="sa5 sa18">Same industry</text>
+  </g>
+  <g id="disclaimer">
+    <rect x="114.2" y="844.4" class="sa4 sa0" width="735.1" height="47"/>
+    <text transform="matrix(1.0183 0 0 1 114.1582 855.917)">
+      <tspan x="0" y="0" class="sa4 sa30 sa31">Rounding errors. Some of the totals above may be slightly different to the underlying detail. This is</tspan>
+      <tspan x="704.2" y="0" class="sa4 sa30 sa31"/>
+      <tspan x="0" y="19.2" class="sa4 sa30 sa31">because the numbers are displayed using only two decimal places rather than their full precision.</tspan>
+    </text>
+  </g>
+  <g id="step_headings">
+    <text transform="matrix(1 0 0 1 7.6582 49.4501)" class="sa32 sa20">1. Starting point</text>
+    <text transform="matrix(1 0 0 1 7.6582 256.4501)" class="sa32 sa20">2. December STP</text>
+    <text transform="matrix(1 0 0 1 7.6582 463.4501)" class="sa32 sa20">3. One pair of jobs</text>
+    <text transform="matrix(1 0 0 1 7.6582 670.4501)" class="sa32 sa20">4. Industry changers</text>
+  </g>
+  <g id="step_1_text">
+    <rect x="8.5" y="79" class="sa33" width="356.6" height="79.8"/>
+    <text transform="matrix(1 0 0 1 8.52 93.4038)">
+      <tspan x="0" y="0" class="sa4 sa34 sa35">Jobs that existed in February but not in</tspan>
+      <tspan x="0" y="24" class="sa4 sa34 sa35">December. 3.26 million jobs distributed</tspan>
+      <tspan x="0" y="48" class="sa4 sa34 sa35">between 2.96 million people.</tspan>
+    </text>
+  </g>
+  <g id="step_2_text">
+    <rect x="8.5" y="286.3" class="sa33" width="356.6" height="79.8"/>
+    <text transform="matrix(1 0 0 1 8.52 300.7269)">
+      <tspan x="0" y="0" class="sa4 sa34 sa35">Of the 2.96 million people, 1.77 million</tspan>
+      <tspan x="0" y="24" class="sa4 sa34 sa35">had a December STP record.</tspan>
+      <tspan x="0" y="48" class="sa4 sa34 sa35">1.20 million had no December record.</tspan>
+    </text>
+  </g>
+  <g id="step_3_text">
+    <rect x="8.5" y="492.7" class="sa33" width="373.8" height="83.2"/>
+    <text transform="matrix(1 0 0 1 8.52 507.0745)">
+      <tspan x="0" y="0" class="sa4 sa34 sa35">0.42 million people had multiple jobs in</tspan>
+      <tspan x="0" y="24" class="sa4 sa34 sa35">either February or December and cannot</tspan>
+      <tspan x="0" y="48" class="sa4 sa34 sa35">be associated with a single industry.</tspan>
+    </text>
+  </g>
+  <g id="step_4_text">
+    <rect x="8.5" y="702.2" class="sa33" width="373.8" height="83.2"/>
+    <text transform="matrix(1 0 0 1 8.52 716.5844)">
+      <tspan x="0" y="0" class="sa4 sa34 sa35">0.89 million people changed industries</tspan>
+      <tspan x="0" y="24" class="sa4 sa34 sa35">while 0.45 million people remained in the</tspan>
+      <tspan x="0" y="48" class="sa4 sa34 sa35">same industry.</tspan>
+    </text>
+  </g>
+</svg>

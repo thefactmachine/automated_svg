@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1223.1 905.8" style="enable-background:new 0 0 1223.1 905.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:0.3732;stroke-miterlimit:10;}
+	.st2{fill:#FFF933;stroke:#000000;stroke-width:0.571;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:0.571;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{font-family:'Helvetica-Light';}
+	.st6{font-size:20px;}
+	.st7{font-family:'Helvetica';}
+	.st8{font-size:36px;}
+	.st9{fill:#FF0000;}
+	.st10{fill:#337DB4;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g id="background_x5F_rectangle">
+	<rect y="-4.5" class="st0" width="1223.1" height="910"/>
+</g>
+<g id="warning_x5F_symbol">
+	<path class="st1" d="M27,853.8L27,853.8c-6.8,11.5,1.7,25.9,15.3,25.9l0,0c13.5,0,22-14.4,15.3-25.9l0,0
+		C50.6,842.3,33.7,842.3,27,853.8z"/>
+	<path class="st2" d="M36.5,830.2l-25.6,43.5c-2.5,4.3,0.6,9.7,5.7,9.7h51.1c5.1,0,8.2-5.4,5.7-9.7l-25.6-43.5
+		C45.3,825.9,39,825.9,36.5,830.2z"/>
+	<path class="st3" d="M42.4,875.9h-0.8c-1.6,0-3-1.3-3-2.9l0,0c0-1.6,1.3-2.9,3-2.9h0.8c1.6,0,3,1.3,3,2.9l0,0
+		C45.3,874.5,44,875.9,42.4,875.9z"/>
+	<path class="st3" d="M42,867.9L42,867.9c-1.9,0-3.5-1.5-3.5-3.4V844c0-1.9,1.5-3.4,3.5-3.4l0,0c1.9,0,3.5,1.5,3.5,3.4v20.5
+		C45.3,866.4,43.8,867.9,42,867.9z"/>
+</g>
+<g id="new_text_x5F_starting_x5F_point">
+	<rect x="8.5" y="77" class="st4" width="348.5" height="79.8"/>
+	<text transform="matrix(1 0 0 1 8.52 91.4038)"><tspan x="0" y="0" class="st5 st6">Jobs that existed in February but not in </tspan><tspan x="0" y="24" class="st5 st6">December. 3.26 million jobs distribut</tspan><tspan x="327.8" y="24" class="st5 st6">-</tspan><tspan x="0" y="48" class="st5 st6">ed between 2.96 million people.</tspan></text>
+	<rect x="3.7" y="24.6" class="st4" width="348.5" height="46"/>
+	<text transform="matrix(1 0 0 1 3.6728 50.4562)" class="st7 st8">1. Starting point</text>
+</g>
+<g id="disclaimer_x5F_text">
+	<rect x="114.2" y="836.4" class="st4" width="1095" height="47"/>
+	<text transform="matrix(1.0183 0 0 1 114.1582 850.7969)"><tspan x="0" y="0" class="st5 st6">Rounding errors. Some the totals above may be slightly different to the underlying detail. This is because the numbers </tspan><tspan x="0" y="24" class="st5 st6">are displayed using only two decimal places rather than their full precision.</tspan></text>
+</g>
+<g id="rectangles_1_">
+	<rect id="step_x5F_4_x5F_red" x="649.9" y="645.2" class="st9" width="120.4" height="120"/>
+	<rect id="step_x5F_4_x5F_blue" x="413.1" y="645.2" class="st10" width="237.8" height="120"/>
+	<rect id="step_x5F_3_x5F_red" x="770.3" y="437.2" class="st9" width="111.5" height="120"/>
+	<rect id="step_x5F_3_x5F_blue" x="413.1" y="437.2" class="st10" width="357.2" height="120"/>
+	<rect id="step_x5F_2_x5F_red" x="881.3" y="230.2" class="st9" width="326.4" height="120"/>
+	<rect id="step_x5F_2_x5F_blue" x="413.1" y="230.2" class="st10" width="468.7" height="120"/>
+	<rect id="step_x5F_1" x="413.1" y="23.2" width="796.1" height="120"/>
+</g>
+<g id="white_x5F_top_x5F_arrows">
+</g>
+<g id="arrow_x5F_top_x5F_left">
+	<polygon class="st0" points="459.7,70.7 439.9,82.2 459.7,93.7 	"/>
+	<line class="st11" x1="612.1" y1="82.2" x2="456.5" y2="82.2"/>
+</g>
+<g id="arrow_x5F_top_x5F_right">
+	<polygon class="st0" points="1168.4,93.7 1188.3,82.2 1168.4,70.7 	"/>
+	<line class="st11" x1="1016.1" y1="82.2" x2="1171.8" y2="82.2"/>
+</g>
+</svg>

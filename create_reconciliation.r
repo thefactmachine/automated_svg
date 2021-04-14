@@ -70,15 +70,6 @@ node_grp_warning <- read_xml("<g />")
 xml_attr(node_grp_warning, "id") <- "warning_symbol"
 
 # ====
-node_path_warning_a <- read_xml("<path />")
-xml_attr(node_path_warning_a, "class") <- "sa1"
-
-str_path <- 
-  paste0("M27,853.8L27,853.8c-6.8,11.5,1.7,25.9,15.3,25.9l0,0c13.5,", 
-  "0,22-14.4,15.3-25.9l0,0C50.6,842.3,33.7,842.3,27,853.8z")
-
-xml_attr(node_path_warning_a, "d") <- str_path
-# ====
 node_path_warning_b <- read_xml("<path />")
 xml_attr(node_path_warning_b, "class") <- "sa2"
 
@@ -106,7 +97,6 @@ str_path <- paste0("M42,867.9L42,867.9c-1.9,0-3.5-1.5-3.5-3.4V844c0-1.9,",
 xml_attr(node_path_warning_d, "d") <- str_path
 # ====
 # add paths to group
-xml_add_child(node_grp_warning , node_path_warning_a)
 xml_add_child(node_grp_warning , node_path_warning_b)
 xml_add_child(node_grp_warning , node_path_warning_c)
 xml_add_child(node_grp_warning , node_path_warning_d)

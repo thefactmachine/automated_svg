@@ -54,9 +54,9 @@
     <text transform="matrix(1 0 0 1 588.5901 296.9075)" class="sa0 sa7 sa13">1.77 M</text>
     <text transform="matrix(1 0 0 1 985.5903 296.9078)" class="sa0 sa7 sa13">1.20 M</text>
     <text transform="matrix(1 0 0 1 532.5903 505.9073)" class="sa0 sa7 sa13">1.34 M</text>
-    <text transform="matrix(1 0 0 1 791.6534 505.9075)" class="sa0 sa7 sa13">0.42</text>
-    <text transform="matrix(1 0 0 1 474.5903 712.2468)" class="sa0 sa7 sa13">0.89 M</text>
-    <text transform="matrix(1 0 0 1 676.2523 712.2469)" class="sa0 sa7 sa13">0.45</text>
+    <text transform="matrix(1 0 0 1 775.6534  505.9075)" class="sa0 sa7 sa13">423 K</text>
+    <text transform="matrix(1 0 0 1 474.5903 712.2468)" class="sa0 sa7 sa13">896 K</text>
+    <text transform="matrix(1 0 0 1 660.252 712.2469)" class="sa0 sa7 sa13">449 K</text>
   </g>
   <g id="down_arrows">
     <line class="sa14" x1="770.2" y1="565.6" x2="770.2" y2="632.4"/>
@@ -105,7 +105,7 @@
   <g id="step_3_text">
     <rect x="8.5" y="492.7" class="sa33" width="373.8" height="83.2"/>
     <text transform="matrix(1 0 0 1 8.52 507.0745)">
-      <tspan x="0" y="0" class="sa4 sa34 sa35">0.42 million people had multiple jobs in</tspan>
+      <tspan x="0" y="0" class="sa4 sa34 sa35">423 thousand people had multiple jobs in</tspan>
       <tspan x="0" y="24" class="sa4 sa34 sa35">either February or December and cannot</tspan>
       <tspan x="0" y="48" class="sa4 sa34 sa35">be associated with a single industry.</tspan>
     </text>
@@ -113,8 +113,8 @@
   <g id="step_4_text">
     <rect x="8.5" y="702.2" class="sa33" width="373.8" height="83.2"/>
     <text transform="matrix(1 0 0 1 8.52 716.5844)">
-      <tspan x="0" y="0" class="sa4 sa34 sa35">0.89 million people changed industries</tspan>
-      <tspan x="0" y="24" class="sa4 sa34 sa35">while 0.45 million people remained in the</tspan>
+      <tspan x="0" y="0" class="sa4 sa34 sa35">896 thousand people changed industries</tspan>
+      <tspan x="0" y="24" class="sa4 sa34 sa35">while 449 thousand people remained in the</tspan>
       <tspan x="0" y="48" class="sa4 sa34 sa35">same industry.</tspan>
     </text>
   </g>

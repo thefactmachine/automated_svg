@@ -212,20 +212,25 @@ xml_text(node_text_step3_blue) <-  "1.34 M"
 # ====
 node_text_step3_red <- read_xml("<text />")
 xml_attrs(node_text_step3_red) <- 
-  c(transform = "matrix(1 0 0 1 791.6534 505.9075)" , class = "sa0 sa7 sa13")
-xml_text(node_text_step3_red) <-  "0.42"
+  c(transform = "matrix(1 0 0 1 775.6534  505.9075)" , class = "sa0 sa7 sa13")
+xml_text(node_text_step3_red) <-  "423 K"
 
 # ====
 node_text_step4_blue <- read_xml("<text />")
 xml_attrs(node_text_step4_blue) <- 
   c(transform = "matrix(1 0 0 1 474.5903 712.2468)" , class = "sa0 sa7 sa13")
-xml_text(node_text_step4_blue) <-  "0.89 M"
+xml_text(node_text_step4_blue) <-  "896 K"
 
 # ====
 node_text_step4_red <- read_xml("<text />")
 xml_attrs(node_text_step4_red) <- 
-  c(transform = "matrix(1 0 0 1 676.2523 712.2469)", class = "sa0 sa7 sa13")
-xml_text(node_text_step4_red) <-  "0.45"
+  c(transform = "matrix(1 0 0 1 660.252 712.2469)", class = "sa0 sa7 sa13")
+xml_text(node_text_step4_red) <-  "449 K"
+
+
+
+
+
 
 # ========================
 # pin to group
@@ -512,7 +517,7 @@ str_ts_step <- "sa4 sa34 sa35"
 node_text_step_3_ts1  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_3_ts1) <- 
   c(x="0", y="0", class = str_ts_step)
-xml_text(node_text_step_3_ts1) <- "0.42 million people had multiple jobs in"
+xml_text(node_text_step_3_ts1) <- "423 thousand people had multiple jobs in"
 
 # ====
 node_text_step_3_ts2  <- read_xml("<tspan />") 
@@ -555,13 +560,13 @@ str_ts_step <- "sa4 sa34 sa35"
 node_text_step_4_ts1  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_4_ts1) <- 
   c(x="0", y="0", class = str_ts_step)
-xml_text(node_text_step_4_ts1) <- "0.89 million people changed industries"
+xml_text(node_text_step_4_ts1) <- "896 thousand people changed industries"
 
 # ====
 node_text_step_4_ts2  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_4_ts2) <- 
   c(x="0", y="24", class = str_ts_step)
-xml_text(node_text_step_4_ts2) <- "while 0.45 million people remained in the"
+xml_text(node_text_step_4_ts2) <- "while 449 thousand people remained in the"
 
 # ====
 node_text_step_4_ts3  <- read_xml("<tspan />") 
@@ -607,7 +612,9 @@ xml_add_child(node_svg , node_grp_step_4_text)
 root <- xml_new_document() 
 xml_add_child(root , node_svg)
 
-str_path <- "/Users/markthekoala/Library/Mobile Documents/com~apple~CloudDocs/automated_svg/reconciliation.svg"
+
+
+str_path <- "/Users/zurich/Library/Mobile Documents/com~apple~CloudDocs/ato_pre_employment/automate_svg/reconciliation.svg"
 xml2::write_xml(root, str_path, options = c("no_declaration", "format") )
 
 

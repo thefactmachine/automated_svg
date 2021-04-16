@@ -114,7 +114,7 @@ c(x="413.1", y="23.2", class = "sa20", width = "796.1", height = "120")
 
 # ========================
 # step 2
-node_rect_s2_blue <- read_xml("<rect />")
+node_rect_s2_blue <- read_xml("<rect />") 
 
 xml_attrs(node_rect_s2_blue) <- 
   c(x = "413.1", y = "230.2", class = "sa10", width = "468.7", height = "120")

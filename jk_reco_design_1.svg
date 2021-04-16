@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1223.1 905.8" style="enable-background:new 0 0 1223.1 905.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
@@ -16,7 +16,7 @@
 	.st10{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
 	.st11{font-family:'Helvetica';}
 	.st12{font-size:39px;}
-	.st13{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#000000;stroke-miterlimit:10;}
 	.st14{fill:#FF00CC;}
 	.st15{font-size:21px;}
 	.st16{fill:#CC0000;}
@@ -24,7 +24,7 @@
 	.st18{font-size:20px;}
 </style>
 <g id="background_x5F_rectangle">
-	<rect x="0" y="5.1" class="st0" width="1223.1" height="895.7"/>
+	<rect y="5.1" class="st0" width="1223.1" height="895.7"/>
 </g>
 <g id="warning_x5F_symbol">
 	<path class="st1" d="M36.5,830.2l-25.6,43.5c-2.5,4.3,0.6,9.7,5.7,9.7h51.1c5.1,0,8.2-5.4,5.7-9.7l-25.6-43.5
@@ -38,7 +38,9 @@
 </g>
 <g id="disclaimer_x5F_text">
 	<rect x="114.2" y="844.4" class="st3" width="735.1" height="47"/>
-	<text transform="matrix(1.0183 0 0 1 114.1582 855.917)"><tspan x="0" y="0" class="st4 st5 st6">Rounding errors. Some the totals above may be slightly different to the underlying detail. This is be</tspan><tspan x="704.2" y="0" class="st4 st5 st6">-</tspan><tspan x="0" y="19.2" class="st4 st5 st6">cause the numbers are displayed using only two decimal places rather than their full precision.</tspan></text>
+	<text transform="matrix(1.0183 0 0 1 114.1582 855.917)" class="st4 st5 st6">Rounding errors. Some the totals above may be slightly different to the underlying detail. This is be</text>
+	<text transform="matrix(1.0183 0 0 1 831.2451 855.917)" class="st4 st5 st6">-</text>
+	<text transform="matrix(1.0183 0 0 1 114.1582 875.1172)" class="st4 st5 st6">cause the numbers are displayed using only two decimal places rather than their full precision.</text>
 </g>
 <g id="rectangles_1_">
 	<rect id="step_x5F_4_x5F_red" x="649.9" y="645.2" class="st7" width="120.4" height="120"/>
@@ -60,9 +62,9 @@
 	<line class="st10" x1="1016.1" y1="82.2" x2="1171.8" y2="82.2"/>
 </g>
 <g id="rectangle_x5F_text">
-	<text transform="matrix(1 0 0 1 676.2523 712.2469)" class="st0 st11 st12">0.45</text>
-	<text transform="matrix(1 0 0 1 474.5903 712.2468)" class="st0 st11 st12">0.89 M</text>
-	<text transform="matrix(1 0 0 1 791.6534 505.9075)" class="st0 st11 st12">0.42</text>
+	<text transform="matrix(1 0 0 1 660.2523 712.2469)" class="st0 st11 st12">449 K</text>
+	<text transform="matrix(1 0 0 1 474.5903 712.2468)" class="st0 st11 st12">896 K</text>
+	<text transform="matrix(1 0 0 1 775.6534 505.9075)" class="st0 st11 st12">423 K</text>
 	<text transform="matrix(1 0 0 1 532.5903 505.9073)" class="st0 st11 st12">1.34 M</text>
 	<text transform="matrix(1 0 0 1 985.5903 296.9078)" class="st0 st11 st12">1.20 M</text>
 	<text transform="matrix(1 0 0 1 588.5901 296.9075)" class="st0 st11 st12">1.77 M</text>
@@ -94,18 +96,26 @@
 </g>
 <g id="text_x5F_detail_x5F_1">
 	<rect x="8.5" y="79" class="st3" width="356.6" height="79.8"/>
-	<text transform="matrix(1 0 0 1 8.52 93.4038)"><tspan x="0" y="0" class="st5 st18">Jobs that existed in February but not in </tspan><tspan x="0" y="24" class="st5 st18">December. 3.26 million jobs distributed </tspan><tspan x="0" y="48" class="st5 st18">between 2.96 million people.</tspan></text>
+	<text transform="matrix(1 0 0 1 8.52 93.4038)" class="st5 st18">Jobs that existed in February but not in </text>
+	<text transform="matrix(1 0 0 1 8.52 117.4038)" class="st5 st18">December. 3.26 million jobs distributed </text>
+	<text transform="matrix(1 0 0 1 8.52 141.4038)" class="st5 st18">between 2.96 million people.</text>
 </g>
 <g id="text_x5F_detail_x5F_2">
 	<rect x="8.5" y="286.3" class="st3" width="356.6" height="79.8"/>
-	<text transform="matrix(1 0 0 1 8.52 300.7269)"><tspan x="0" y="0" class="st5 st18">Of the 2.96 million people, 1.77 million </tspan><tspan x="0" y="24" class="st5 st18">had a December STP record. </tspan><tspan x="0" y="48" class="st5 st18">1.20 million had no December record.</tspan></text>
+	<text transform="matrix(1 0 0 1 8.52 300.7269)" class="st5 st18">Of the 2.96 million people, 1.77 million </text>
+	<text transform="matrix(1 0 0 1 8.52 324.7269)" class="st5 st18">had a December STP record. </text>
+	<text transform="matrix(1 0 0 1 8.52 348.7269)" class="st5 st18">1.20 million had no December record.</text>
 </g>
 <g id="text_x5F_detail_x5F_3">
 	<rect x="8.5" y="492.7" class="st3" width="373.8" height="83.2"/>
-	<text transform="matrix(1 0 0 1 8.52 507.0745)"><tspan x="0" y="0" class="st5 st18">0.42 million people had multiple jobs in </tspan><tspan x="0" y="24" class="st5 st18">either February or December and cannot </tspan><tspan x="0" y="48" class="st5 st18">be associated with a single industry</tspan></text>
+	<text transform="matrix(1 0 0 1 8.52 507.0745)" class="st5 st18">423 thousand people had multiple jobs in </text>
+	<text transform="matrix(1 0 0 1 8.52 531.0745)" class="st5 st18">either February or December and cannot </text>
+	<text transform="matrix(1 0 0 1 8.52 555.0745)" class="st5 st18">be associated with a single industry</text>
 </g>
 <g id="text_x5F_detail_x5F_4">
 	<rect x="8.5" y="702.2" class="st3" width="373.8" height="83.2"/>
-	<text transform="matrix(1 0 0 1 8.52 716.5844)"><tspan x="0" y="0" class="st5 st18">0.89 million people changed industries </tspan><tspan x="0" y="24" class="st5 st18">while 0.45 million people remained in the </tspan><tspan x="0" y="48" class="st5 st18">same industry.</tspan></text>
+	<text transform="matrix(1 0 0 1 8.52 716.5844)" class="st5 st18">896 thousand people changed industries </text>
+	<text transform="matrix(1 0 0 1 8.52 740.5844)" class="st5 st18">while 449 thousand people remained in the </text>
+	<text transform="matrix(1 0 0 1 8.52 764.5844)" class="st5 st18">same industry.</text>
 </g>
 </svg>

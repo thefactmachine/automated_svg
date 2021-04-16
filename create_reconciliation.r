@@ -284,7 +284,7 @@ xml_attr(node_text_rect_comments, "id") <- "rectangle_comments"
 node_text_a <- read_xml("<text />")
 xml_attrs(node_text_a) <- 
   c(transform="matrix(1 0 0 1 411.8057 379.6733)", class="sa5 sa18")
-xml_text(node_text_a) <- "STP record in December"
+xml_text(node_text_a) <- "STP record in December (i.e. different job)"
 
 # ====
 node_text_b <- read_xml("<text />")
@@ -392,7 +392,7 @@ xml_text(node_step_heading_1) <- "1. Starting point"
 # ====
 node_step_heading_2 <- read_xml("<text />")
 xml_attrs(node_step_heading_2) <- 
-  c(transform = "matrix(1 0 0 1 7.6582 256.4501)", class = str_s_heading_class)
+  c(transform = "matrix(1 0 0 1 7.6582 254.4501)", class = str_s_heading_class)
 xml_text(node_step_heading_2) <- "2. December STP"
 
 # ====
@@ -463,37 +463,44 @@ xml_attr(node_grp_step_2_text, "id") <- "step_2_text"
 # ====
 node_rect_step_2_text  <- read_xml("<rect />") 
 xml_attrs(node_rect_step_2_text) <- 
-  c(x ="8.5", y ="286.3", class ="sa33", width ="356.6", height ="79.8")
+  c(x ="8.5", y ="265.6", class ="sa33", width ="391.5", height = "109.6")
 
 # ====
 node_text_step_2_text  <- read_xml("<text />") 
 xml_attrs(node_text_step_2_text) <- 
-  c(transform = "matrix(1 0 0 1 8.52 300.7269)")
+  c(transform = "matrix(1 0 0 1 8.4999 279.9994)")
 
 str_ts_step <- "sa4 sa34 sa35"
 # ====
 node_text_step_2_ts1  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_2_ts1) <- 
   c(x="0", y="0", class = str_ts_step)
-xml_text(node_text_step_2_ts1) <- "Of the 2.96 million people, 1.77 million"
+xml_text(node_text_step_2_ts1) <- "Of the 2.96 million people, 1.77 million had"
 
 # ====
 node_text_step_2_ts2  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_2_ts2) <- 
   c(x="0", y="24", class = str_ts_step)
-xml_text(node_text_step_2_ts2) <- "had a December STP record."
+xml_text(node_text_step_2_ts2) <- "had a December STP record. This implies"
 
 # ====
 node_text_step_2_ts3  <- read_xml("<tspan />") 
 xml_attrs(node_text_step_2_ts3) <- 
   c(x="0", y="48", class = str_ts_step)
-xml_text(node_text_step_2_ts3) <- "1.20 million had no December record."
+xml_text(node_text_step_2_ts3) <- "that they had a different job in December."
+
+node_text_step_2_ts4  <- read_xml("<tspan />") 
+xml_attrs(node_text_step_2_ts4) <- 
+  c(x="0", y="72", class = str_ts_step)
+xml_text(node_text_step_2_ts4) <- "1.20 milliion had no December record."
+
 
 # ========================
 
 xml_add_child(node_text_step_2_text , node_text_step_2_ts1)
 xml_add_child(node_text_step_2_text , node_text_step_2_ts2)
 xml_add_child(node_text_step_2_text , node_text_step_2_ts3)
+xml_add_child(node_text_step_2_text , node_text_step_2_ts4)
 
 xml_add_child(node_grp_step_2_text , node_rect_step_2_text)
 xml_add_child(node_grp_step_2_text , node_text_step_2_text)
@@ -613,8 +620,8 @@ root <- xml_new_document()
 xml_add_child(root , node_svg)
 
 
+str_path <- "/Users/markthekoala/Library/Mobile Documents/com~apple~CloudDocs/automated_svg/reconciliation_new.svg"
 
-str_path <- "/Users/zurich/Library/Mobile Documents/com~apple~CloudDocs/ato_pre_employment/automate_svg/reconciliation.svg"
 xml2::write_xml(root, str_path, options = c("no_declaration", "format") )
 
 
